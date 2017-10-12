@@ -1,0 +1,311 @@
+//============================= HEADER =============================================
+@mixin setHeader(){
+	header.l-header{
+		div.header-top{
+			width:100% !important;
+			div.container{
+				@include setWidthContainer()
+				ul.header-top-right{
+					li{
+						a{
+							padding:0 20px;
+						}
+					}
+				}
+			}
+		}
+		div.header-bottom{
+			div.container{
+				@include setWidthContainer()
+				div.logo{
+					float:left;
+					width:35%;
+					img{
+						width:100%;
+					}
+				}
+				div.contact{
+					margin-left:5%;
+					p{
+						float:left;
+						@include setFont(1em,#333333,400,$font-meiryo)
+						line-height: 32px;
+						img{
+
+						}
+					}
+					span{
+						@include setFont(1.56rem,#b92d26,500,$font-meiryo)
+						line-height: 30px;
+					}
+				}
+				div.note{
+					float:left;
+					margin-left:9%;
+					margin-top:2%;
+					p{
+						padding:0 10px;
+						width:100%;
+						height:40px;
+						line-height: 35px;
+						@include setFont(0.625rem,#00559d,400,$font-meiryo)
+						img{
+							padding-top:10px;
+							width:10%;
+						}
+					}
+				}
+			}
+		}
+		div.slide-header{
+			position:relative;
+			div.banner-header-desktop{
+				img{
+					width:100%;
+				}
+			}
+			div.banner-header-mobile{
+				display:none;
+				img{
+					width:100%;
+				}
+			}
+			div.menu-header{
+				text-align:center;
+				ul.menu{
+					display:inline-block;
+					li{
+
+						height:50px;
+						line-height: 50px;
+						a{
+							@include setFont(0.75rem,#ffffff,400,$font-meiryo)
+						}
+
+					}
+				}
+			}
+		}
+		div.button-menu-header{
+			display:none;
+
+			div.container{
+				a{
+
+				}
+			}
+		}
+	}
+
+}
+//============================= FOOTER =============================================
+@mixin setFooterLarge(){
+	footer.l-footer{
+			div.info-footer{
+				div.container{
+					@include setWidthContainer()
+				}
+			}
+			div.footer-top{
+				padding:60px 0;
+				div.container{
+					width:100% !important;
+					@include border-box;
+					padding:0 15px;
+					>ul{
+						> li{
+							padding-bottom:30px;
+							> a{
+								@include setFont(0.75rem,#333333,bold,$font-meiryo)
+							}
+							>ul{
+								>li{
+									a{
+										@include setFont(0.5rem,#333333,400,$font-meiryo)
+									}
+									&:before{
+										content:"\f054";
+										font-family: FontAwesome;
+										position:absolute;
+										@include setFont(0.3rem,#b92d26);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			div.footer-bottom{
+				background: #b92d26;
+				div.container{
+					width:100% !important;
+					padding:0 15px;
+					@include border-box;
+					div.logo-footer{
+						float:left;
+						padding:20px 0;
+					}
+					div.copy-right{
+						float:left;
+						padding-top:40px;
+						margin-left:310px;
+						@include setFont(0.75rem,#ffffff,bold,$font-meiryo)
+					}
+					@include clearfix;
+				}
+			}
+			div.c-back-to-top{
+				position:fixed;
+				bottom:3%;
+				right:5%;
+			}
+		}
+}
+//============================= BEARDCUM =============================================
+@mixin setBreadcumLarge(){
+	div.c-breadcum{
+		div.container{
+			@include setWidthContainer()
+		}
+	}
+}
+//============================= CONTENT-INDEX =============================================
+@mixin setContentIndexLarge(){
+	div.l-content-index{
+		padding:38px 0;
+		div.container{
+			@include setWidthContainer();
+			div.main-content{
+				margin:0 3%;
+			}
+		}
+	}
+}
+//============================= CONTENT-CHARACTERISTIC=============================================
+@mixin setContentCharacteristics(){
+	div.l-characteristics{
+		div.container{
+			@include setWidthContainer();
+			div.main-content-characteristics{
+				margin-bottom:70px;
+				div.box-info-characteristics{
+					position:absolute;
+					top:80px;
+					left:110px;
+					width:50%;
+					padding:40px;
+					h2{
+						@include setFont(1.5rem,#b92d26,500,$font-meiryo)
+					}
+					p{
+						@include setFont(0.7rem,#333333,400,$font-meiryo)
+					}
+				}
+				div.img-characteristics{
+					float:right;
+					img.desktop{
+						width:100%;
+					}
+					img.mobile{
+						display:none;
+					}
+				}
+				@include clearfix;
+				&:nth-child(2n){
+					div.box-info-characteristics{
+						top:80px;
+						left:45%;
+					}
+					div.img-characteristics{
+					}
+				}
+			}
+		}
+	}
+}
+//============================= SERVICE-CHARACTERISTIC=============================================
+@mixin setServiceLarge(){
+	div.l-service-characteristics{
+		background: #fafaf7;
+		div.container{
+			@include setWidthContainer();
+			div.list-icons{
+				margin:0 120px;
+				ul{
+					li{
+						width:48%;
+						height:10%;
+						margin-right:20px;
+						margin-bottom:20px;
+						position:relative;
+						a{
+							img{
+								padding:25px 10px 40px 15px;
+							}
+							p{
+								padding:50px 10px 40px 0;
+								@include setFont(0.9rem,#333333,bold,$font-meiryo)
+							}
+							@include clearfix;
+						}
+						&:after{
+							content:"\f054";
+							font-family: FontAwesome;
+							position:absolute;
+							top:40%;
+							right:5%;
+							@include setFont(20px,#b92d26)
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//============================= CONTENT_SERVICE============================================
+@mixin setContentServiceLarge(){
+	div.l-content-service{
+		div.container{
+			@include setWidthContainer();
+			div.box-info-service{
+				margin:0!important;
+				div.box-info{
+					div.info-service{
+						width:75%;
+						a.btn-title{
+							margin:30px 0px 17px 0;
+							padding:10px 0 10px 14px;
+						}
+					}
+					@include clearfix;
+				}
+			}
+		}
+	}
+}
+//============================= CONTENT_CONSULTING============================================
+@mixin setContentConsultingLarge(){
+	div.l-content-consulting{
+		div.container{
+			@include setWidthContainer()
+			div.main-consulting{
+				margin:0 !important;
+			}
+		}
+	}
+	div.c-btn-web{
+		text-align: center;
+		margin:30px 0 60px 0 ;
+	}
+}
+//============================= CONTENT_PROFILE============================================
+@mixin setContentProfileLarge(){
+	div.l-content-profile{
+		div.container{
+			@include setWidthContainer();
+			div.main-profile{
+				margin: 0 !important;
+			}
+		}
+	}
+}

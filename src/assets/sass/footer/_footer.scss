@@ -1,0 +1,153 @@
+footer.l-footer{
+	div.info-footer{
+		background: url('../img/banner_footer.png') no-repeat;
+		background-size:cover;
+		width:100%;
+		padding: 80px 0;
+		div.container{
+			text-align: center;
+			div.text{
+				@include setFont(1.125rem,#333333,bold);
+				padding-bottom:20px;
+			}
+			p.text-1{
+				@include setFont(1.875rem,#333333,400,$font-meiryo);
+				padding-bottom:20px;
+			}
+			p.text-2{
+				@include setFont(1.375rem,#333333,bold,$font-meiryo)
+
+			}
+			div.contact{
+				div.number{
+					@include setFont(3.75rem,#b92d26,500,$font-meiryo);
+					img{
+						width:38px;
+						height:45px;
+						padding-top:20px;
+					}
+					span.tel{
+						display:none;
+					}
+				}
+				div.time{
+					@include setFont(14px,#333333,400,$font-meiryo);
+					padding-bottom:40px;
+				}
+			}
+		}
+	}
+	div.footer-top{
+		background: #f4f5f0;
+		padding:80px 0;
+		div.container{
+			>ul{
+				float:left;
+				> li{
+					padding-bottom:40px;
+					> a{
+						display:block;
+						margin-left:30px;
+						@include setFont(14px,#333333,bold,$font-meiryo)
+					}
+					&:before{
+						content:"\f054";
+						font-family: FontAwesome;
+						position:absolute;
+						width:20px;
+						height:20px;
+						background: #b92d26;
+						@include setBorderRadius(50%);
+						text-align: center;
+						line-height: 20px;
+						@include setFont(12px,#FFFFFF);
+					}
+					>ul{
+						>li{
+							padding:18px 0px 0 12px;
+							a{
+								padding-left:20px;
+								@include setFont(12px,#333333,400,$font-meiryo)
+							}
+							&:before{
+								content:"\f054";
+								font-family: FontAwesome;
+								position:absolute;
+								@include setFont(12px,#b92d26);
+							}
+						}
+					}
+				}
+			}
+			ul.list-1{
+				padding-right:75px;
+				li{
+					a{
+
+					}
+				}
+			}
+			ul.list-2{
+				padding-right:85px;
+				li{
+					a{
+					}
+				}
+			}
+			ul.list-3{
+				padding-right:97px;
+				li{
+					a{
+					}
+				}
+			}
+			ul.list-4{
+				li{
+					a{
+					}
+				}
+			}
+			> ul.list-menu-mobile-1{
+				display:none;
+			}
+			> ul.list-menu-mobile-2{
+				display:none;
+			}
+		}
+		@include clearfix;
+	}
+	div.footer-bottom{
+		background: #b92d26;
+		div.container{
+			
+			div.logo-footer{	
+				float:left;
+				padding:20px 0;
+			}
+			div.copy-right{
+				float:left;
+				padding-top:40px;
+				margin-left:310px;
+				@include setFont(12px,#ffffff,bold,$font-meiryo)
+			}
+			@include clearfix;
+		}
+	}
+	div.c-back-to-top{
+		position:fixed;
+		bottom:3%;
+		right:20%;
+		a{
+			display:inline-block;
+			width:40px;
+			height:40px;
+			line-height:40px;
+			background: #b92d26;
+			text-align: center;
+
+			i{
+				@include setFont(14px,#ffffff)
+			}
+		}
+	}
+}

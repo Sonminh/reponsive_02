@@ -1,0 +1,65 @@
+div.l-service-characteristics{
+	background: #fafaf7;
+	div.container{
+		div.name-service{
+			text-align: center;
+			p{
+				@include setFont(1.125rem,#333333,bold)
+				padding: 80px 0 15px 0px;
+			}
+		}
+		div.title-service{
+			text-align: center;
+			h2{
+				@include setFont(1.875rem,#b92d26,400,$font-meiryo)
+				padding-bottom:40px !important;
+			}
+		}
+		div.list-icons{
+			margin:0 179px;
+			padding-bottom:80px !important;
+			ul{
+				li{
+					float:left;
+					width:426px;
+					@include border-box;
+					border: 3px solid #b92d26;
+					margin-right:40px;
+					margin-bottom:40px;
+					position:relative;
+					a{
+						display:block;
+						img{
+							float:left;
+							padding:30px 10px 40px 40px;
+						}
+						p{
+							float:left;
+							padding:50px 10px 40px 0;
+							@include setFont(1.125rem,#333333,bold,$font-meiryo)
+						}
+						@include clearfix;
+					}
+					&:nth-child(2n){
+						margin-right:0 !important;
+					}
+					&:nth-last-child(2){
+						margin-bottom:0 !important;
+					}
+					&:last-child{
+						margin-bottom:0 !important;
+					}
+					&:after{
+						content:"\f054";
+						font-family: FontAwesome;
+						position:absolute;
+						top:40%;
+						right:5%;
+						@include setFont(20px,#b92d26)
+					}
+				}
+				@include clearfix;
+			}
+		}
+	}
+}

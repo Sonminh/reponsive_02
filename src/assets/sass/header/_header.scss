@@ -1,0 +1,126 @@
+header.l-header{
+	width:100%;
+	div.header-top{
+		padding:8px 0 10px;
+		border-bottom:1px solid #dddddd;
+		div.container{
+			p.header-top-left{
+				float:left;
+				@include setFont(0.75rem ,#333333,400,$font-meiryo);
+			}
+			ul.header-top-right{
+				float:right;
+				li{
+					float:left;
+					border-left:1px solid #e4e4e4;
+					a{
+						display:block;
+						padding:0 20px;
+						@include setFont(0.75rem,#333333,400,$font-meiryo);
+					}
+				}
+				@include clearfix;
+			}
+			@include clearfix;
+		}
+	}
+	div.header-bottom{
+		div.container{
+			div.logo{
+				float:left;
+				img{
+					width:100%;
+				}
+			}
+			div.contact{
+				float:left;
+				padding-top:27px;
+				margin-left:115px;
+				p{
+					float:left;
+					@include setFont(1.5rem,#333333,400,$font-meiryo)
+					line-height: 32px;
+					img{
+
+					}
+				}
+				span{
+					@include setFont(2.5rem,#b92d26,500,$font-meiryo)
+					line-height: 30px;
+				}
+			}
+			div.note{
+				float:left;
+				margin-left:60px;
+				margin-top:20px;
+				p{
+					width:233px;
+					height:50px;
+					@include border-box;
+					border:2px solid #00559d;
+					text-align: center;
+					line-height: 50px;
+					@include setFont(1rem,#00559d,400,$font-meiryo)
+					img{
+						padding-top:10px;
+					}
+				}
+			}
+			@include clearfix;
+		}
+	}
+	div.slide-header{
+		position:relative;
+		div.banner-header-desktop{
+			img{
+				width:100%;
+			}
+		}
+		div.banner-header-mobile{
+			display:none;
+			img{
+				width:100%;
+			}
+		}
+		div.menu-header{
+			width:100%;
+			position:absolute;
+			top:0px;
+			background: rgba(180,59,52,0.85);
+			z-index:1000;
+			ul.menu{
+				max-width:1250px;
+				margin:0 auto;
+				li{
+					float:left;
+					height:80px;
+					line-height: 80px;
+					border:1px solid #c76c66;
+					border-width:0px 1px 0 1px;
+					a{
+						display:block;
+						@include setFont(1.25rem,#ffffff,400,$font-meiryo)
+						padding:0 26px;
+						&:last-child{
+							padding-left:27px;
+						}
+					}
+					+ li{
+						border-left:0px;
+					}
+
+				}
+				@include clearfix;
+			}
+		}
+	}
+	div.button-menu-header{
+		display:none;
+
+		div.container{
+			a{
+
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+/*============= SET BORDER RADIUS ================= */
+@mixin setBorderRadius($value)
+{
+	border-radius: $value;
+	-moz-border-radius: $value;
+	-webkit-border-radius: $value;
+    -o-border-radius: $value;
+}
+/*============== SET BOX SHADOW ================= */
+
+@mixin setBoxShaDowBottom($size,$color)
+{
+	-webkit-box-shadow: 0px $size 0px 0px $color;
+	-moz-box-shadow: 0px $size 0px 0px $color;
+     box-shadow: 0px $size 0px 0px $color;
+}
+@mixin border-box(){
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*============== SET FONT ================= */
+@mixin setFont($fontSize, $color, $fontWeight: null, $fontFamily : null)
+{
+	color : $color;
+	font-size: $fontSize;
+	
+	@if $fontWeight != null{
+		font-weight :  $fontWeight;
+	}
+	@if $fontFamily != null{
+		font-family: $fontFamily;
+	}
+}
+/*============== SET FONT MOBILE ================= */
+
+@mixin setBreadcumTitleSize($size)
+{
+	section.section-breadcum{
+		h3.title{
+			font-size: $size;
+		}
+	}
+}
+
+/*============== COLOR A:HOVER ================= */
+
+@mixin setTextHover($color , $colorhover){
+	a{
+			color: $color;
+			&:hover{
+				color:$colorhover;
+			}
+		}
+}
+/*============== ARTICLE MOBLE ================= */
+@mixin setArticleMobile($distanceLine :12px , $marginBottom : 30px , $paddingLeftTagA : 12px )
+{
+	.no-padding-left
+	{
+		padding-left: 15px !important;
+	}
+	section.article{
+		margin-bottom:$marginBottom !important;
+		
+		> *{
+			margin-bottom:$distanceLine !important;
+		}
+		&:last-child{
+			margin-bottom: 0px !important;
+		}
+		p.info{
+			i{
+				padding-left: $paddingLeftTagA !important;
+			}
+		}
+		a.viewmore{
+			padding:7px 15px;
+		}
+	}
+}
+/*============== WIGET MOBILE ================= */
+@mixin setMarginBottomWidget($value){
+	div.widget{
+		margin-bottom: $value;
+		&:first-child{
+			margin-top:20px;
+		}
+		&:last-child{
+			margin-bottom: 0px !important;
+		}
+	}
+}
+/*============== SET COLUMN ================= */
+
+@mixin setWidth($pColumn,$pColumnMargin)
+{
+	width : (100% -($pColumn - 1) * $pColumnMargin ) / $pColumn;
+	
+	margin-right: $pColumnMargin;
+	
+	&:nth-child(#{$pColumn}n)
+	{
+		margin-right: 0;
+		margin-bottom : $pColumnMargin;
+	}
+	&:last-child
+	{
+		margin-bottom : 0;
+	}
+}	
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*============== SET PADDING FOOTER================= */
+@mixin setPaddingLeftFooter($padding){
+	padding-left: $padding;
+}
+@mixin setMarrginBottomFooter($margin : 30px){
+	margin-bottom:$margin ;
+}

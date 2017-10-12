@@ -1,0 +1,47 @@
+div.l-characteristics{
+	div.container{
+		div.main-content-characteristics{
+			margin-bottom:80px;
+			position:relative;
+			div.box-info-characteristics{
+				position:absolute;
+				top:60px;
+				left:110px;
+				float:left;
+				width:50%;
+				padding:62px;
+				@include border-box;
+				background: #ffffff;
+				h2{
+					@include setFont(1.875rem,#b92d26,500,$font-meiryo)
+					line-height: 28px;
+				}
+				p{
+					@include setFont(1rem,#333333,400,$font-meiryo)
+					line-height: 28px;
+				}
+			}
+			div.img-characteristics{
+				float:right;
+				img.desktop{
+					width:100%;
+				}
+				img.mobile{
+					display:none;
+				}
+			}
+			@include clearfix;
+			&:nth-child(2n){
+				div.box-info-characteristics{
+					top:60px;
+					left:45%;
+					float:right;
+				}
+				div.img-characteristics{
+					float:left;
+				}
+			}
+		}
+		
+	}
+}

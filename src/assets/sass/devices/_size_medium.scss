@@ -1,0 +1,15 @@
+@media screen
+	and (max-width: $device_size_medium)
+	and (min-width: $device_size_small + 1px)
+{
+	@include setHeaderMedium()
+	@include setFooterMedium()
+	@include setBreadcumLarge()
+	@include setContentIndexLarge()
+	@include setContentIndexMedium()
+	@include setContentCharacteristics()
+	@include setServiceMedium()
+	@include setContentServiceMedium()
+	@include setContentConsultingMedium()
+	@include setContentProfileMedium()
+}

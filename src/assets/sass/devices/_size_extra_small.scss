@@ -1,0 +1,14 @@
+@media screen
+	and (max-width: $device_size_extra_small)
+{
+	@include setHeaderMobile();
+	@include setHeaderExtraSmall();
+	@include setFooterExtraSmall();
+	@include setBreadcumSmall();
+	@include setContentExtraSmallIndex()
+	@include setContentCharacteristicsExtraSmall()
+	@include setServiceExtraSmall();
+	@include setContentSeriveExtraSmall()
+	@include setContentConsultingExtraSmall()
+	@include setContentProFileExtraSmall()
+}	

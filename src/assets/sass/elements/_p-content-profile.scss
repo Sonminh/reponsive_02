@@ -1,0 +1,106 @@
+div.l-content-profile{
+	div.container{
+		div.main-profile{
+			margin: 0 173px;
+			div.form-profile{
+				margin-bottom:77px;
+				div.title-form{
+					padding:40px 0px;
+					p{
+						@include setFont(1.125rem,#333333,400,$font-meiryo)
+					}
+				}
+				div.box-form{
+					background: #f8f8f8;
+					border:1px solid #dddddd;
+					border-width:1px 0 1px 0;
+					div.form-left{
+						float:left;
+						width:15%;
+						padding:30px 0;
+						background: #f8f8f8;
+						@include border-box;
+						p{
+							@include setFont(1rem,#333333,bold,$font-meiryo)
+							padding-left:10px;
+						}
+					}
+					div.form-right{
+						width:85%;
+						background: #FFFFFF;
+						float:left;
+						padding:30px 0 30px 10px;
+						@include border-box;
+						p{
+							@include setFont(1rem,#333333,400,$font-meiryo)
+						}
+					}
+					+ div{
+						border-top:none;
+					}
+					@include clearfix;
+				}
+			}
+			div.main-info-profile-1, div.main-info-profile-2{
+				div.title-info-profile{
+					h2{
+						@include setFont(1.875rem,#b52622,500,$font-meiryo)
+					}
+				}
+				div.box-info-profile{
+					float:left;
+					width:400px;
+					height:270px;
+					@include border-box;
+					border-bottom:1px solid #dddddd;
+					margin-right:40px;
+					&:last-child{
+						border-bottom:none;
+					}
+					div.title-box{
+						padding-top:40px;
+						h3{
+							@include setFont(1.2rem,#333333,500,$font-meiryo)
+							padding-bottom:18px !important;
+						}
+					}
+					div.box-info{
+						padding-bottom:40px;
+						margin-right: 40px;
+						table{
+							border-collapse:collapse;
+							@include border-box;
+							tr{
+								padding-bottom:15px !important;
+								th{
+									vertical-align:top;
+									border-right: 2px solid #b92d26;
+									width:80px;
+									p{
+										padding-right:15px !important;
+									}
+									&:last-child{
+										p{
+											padding-bottom:0 !important;
+										}
+									}
+								}
+								td{
+									vertical-align:top;
+									padding-bottom:10px;
+									p{
+										padding-left:15px !important;
+									}
+								}
+							}
+						}
+					}
+				}
+				@include clearfix;
+			}
+			div.main-info-profile-2{
+				margin-top:30px !important;
+			}
+		}
+	}
+}

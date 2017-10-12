@@ -1,0 +1,113 @@
+div.c-list-name{
+	display:none;
+}
+div.l-content-index{
+	padding:38px 0;
+	&:nth-child(2n+1){
+		background: #fafaf7;
+	}
+	div.container{
+		div.main-content{
+			margin:0 175px;
+			div.content{
+				width:450px;
+				float:left;
+				&:nth-child(2n){
+					padding-left:20px;
+				}
+				@include border-box;
+				div.main-info-1{
+					div.img-person{
+						float:left;
+						img.desktop{
+							width:100%;
+						}
+						img.mobile{
+							display:none;
+						}
+					}
+					div.info-person{
+						float:left;
+						margin-left:22px;
+						h3{
+							@include setFont(1.5rem,#333333,bold,$font-meiryo)
+							span{
+								@include setFont(0.75rem,#333333,400,$font-meiryo)
+							}
+							margin-bottom:40px !important;
+						}
+						div.title-info-person{
+							float:left;
+							p{
+								padding-bottom:15px;
+								margin-right:20px;
+								@include setFont(0.75rem,#333333,bold,$font-meiryo)
+								&:last-child{
+									padding-bottom:0 !important;
+								}
+							}
+						}
+						div.content-info-person{
+							float:left;
+							border-left:2px solid #b92d26;
+							p{
+								padding:0 0 12px 20px;
+								@include setFont(0.75rem,#333333,bold,$font-meiryo)
+							}
+						}
+						@include clearfix;
+					}
+					@include clearfix;
+				}
+				div.main-info-2{
+					margin-top:40px;
+					div.twel{
+						float:left;
+						h3{
+							@include setFont(14px,#333333,bold,$font-meiryo)
+							padding-right:50px !important;
+						}
+					}
+					div.twel-info{
+						width:80%;
+						float:left;
+						border-left:2px solid #b92d26;
+						p{
+							padding-left:20px !important;
+							@include setFont(0.875rem,#333333,400,$font-meiryo)
+						}
+					}
+					@include clearfix;
+				}
+				div.main-info-3{
+					margin-top:40px;
+					div.experience{
+						float:left;
+						h3{
+							@include setFont(14px,#333333,bold,$font-meiryo)
+							padding-right:22px !important;
+						}
+					}
+					div.experience-info{
+						float:left;
+						border-left:2px solid #b92d26;
+						width:80%;
+						ul{
+
+							@include setFont(0.875rem,#333333,400,$font-meiryo)
+							li{
+								margin-left:40px !important;
+								list-style-type: disc;
+							}
+						}
+					}
+					@include clearfix;
+				}
+			}
+			@include clearfix;
+		}
+	}
+}
+div.margin-content{
+	margin-bottom:12px !important;
+}

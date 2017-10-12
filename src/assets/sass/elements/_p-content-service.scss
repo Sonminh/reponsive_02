@@ -1,0 +1,81 @@
+div.l-content-service{
+	div.container{
+		div.box-info-service{
+			margin:0 173px !important;
+			div.title-service{
+				p{
+					padding:41px 0;
+					@include setFont(1.125rem,#333333,400,$font-meiryo)
+				}
+			}
+			div.box-info{
+				border: 1px solid #b92d26;
+				@include border-box();
+				margin-bottom:30px;
+				div.img-service{
+					float:left;
+					img{
+						padding:62px;
+					}
+					a.btn-title{
+						display:none;
+					}
+				}
+				div.info-service{
+					float:left;
+					width:70%;
+					a.btn-title{
+						margin:40px 0px 17px 0;
+						display:block;
+						padding:10px 0 10px 14px;
+						background: #b92d26;
+						@include setFont(1rem,#ffffff,400,$font-meiryo)
+						i{
+							margin-left:10px;
+						}
+					}
+					p{
+						@include setFont(1rem,#333333,400,$font-meiryo)
+						line-height: 24px;
+						padding-bottom:22px;
+					}
+					ul{
+						li{
+							float:left;
+							a{
+								display:inline-block;
+								@include setFont(0.875rem,#114170,400,$font-meiryo)
+								margin-right:15px;
+								i{
+									margin-right:5px;
+									@include setFont(1rem, #b92d26);
+								}
+								&.active{
+									@include setFont(0.875rem,#333333,400,$font-meiryo)
+								}
+							}
+						}
+						@include clearfix;
+					}
+				}
+				@include clearfix;
+			}
+			div.btn-service{
+				text-align: center;
+				padding: 10px 0 70px 0;
+				a{
+					display:inline-block;
+					width:325px;
+					height:40px;
+					text-align: center;
+					background: #00559d;
+					line-height:40px;
+					@include setFont(0.875rem,#FFFFFF,400,$font-meiryo)
+					i{
+						margin-left:10px;
+					}
+				}
+			}
+		}
+	}
+}

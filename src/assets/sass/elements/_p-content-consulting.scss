@@ -1,0 +1,114 @@
+div.l-content-consulting{
+	div.container{
+		div.main-consulting{
+			margin:0 173px;
+			div.list-consulting{
+				margin-top:40px;
+				ul{
+					padding:0 30px;
+					background: #f3f3f3;
+					li{
+						width:50%;
+						float:left;
+						padding:20px 0;
+						a{
+							display:block;
+							@include setFont(1.25rem,#114170,bold,$font-meiryo)
+							i{
+								@include setFont(1.25rem,#b92d26)
+								margin-right:10px;
+							}
+						}
+						&:first-child{
+							float:none;
+							width:100%;
+							border-bottom:1px solid #dddddd;
+						}
+					}
+					@include clearfix;
+				}
+			}
+			div.article-01{
+				div.title-article{
+					padding:50px 0 37px 0;
+					h3{
+						@include setFont(1.875rem,#b52622,400,$font-meiryo)
+					}
+				}
+				div.description-article{
+					padding-bottom:30px !important;
+					p{
+						@include setFont(1rem,#333333,400, $font-meiryo)
+					}
+				}
+				div.article-left{
+					float:left;
+					width:451px;
+					div.box-article-1{
+						h3{
+							@include setFont(1.5rem,#333333,400,$font-meiryo)
+							padding-bottom:30px !important;
+						}
+						ul{
+							li{
+								a{
+									display:inline-block;
+									@include setFont(1.1rem,#333333,400,$font-meiryo)
+								}
+								&:before{
+									content: "• ";
+   									@include setFont(1.5rem,#b52521)
+   									margin-top:5px;
+								}
+							}
+						}
+					}
+				}
+				div.article-right{
+					float:left;
+					margin-left:40px;
+					img{
+					}
+				}
+				@include clearfix;
+			}
+			div.article-02{
+				div.article-02-left{
+					float:left;
+					width:490px;
+					h3{
+						@include setFont(1.875rem,#b52622,400,$font-meiryo)
+						padding-bottom:35px !important;
+					}
+					p{
+						@include setFont(1rem,#333333,400,$font-meiryo)
+						width:95%;
+					}
+				}
+				div.article-02-right{
+					float:left;
+					img{
+
+					}
+				}
+				@include clearfix;
+			}
+			div.info-article{
+				h3{
+					@include setFont(1.5rem,#333333,400,$font-meiryo)
+					padding:40px 0 30px 0 !important;
+				}
+				img.desktop{
+					width:100%;
+				}
+				img.mobile{
+					display:none;
+				}
+			}
+		}
+	}
+}
+div.c-btn-web{
+	text-align: center;
+	margin:50px 0 80px 0 ;
+}

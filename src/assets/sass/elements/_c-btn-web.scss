@@ -1,0 +1,7 @@
+a.btn-click{
+	display:inline-block;
+	padding:10px 23px;
+	@include setFont(1.25rem,#00559d,bold,$font-meiryo);
+	@include border-box;
+	border:2px solid #00559d;
+}
