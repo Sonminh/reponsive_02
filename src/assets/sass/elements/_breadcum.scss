@@ -7,10 +7,9 @@ div.c-breadcum{
 				float:left;
 				a{
 					@include setFont(0.75rem,#114170,400,$font-meiryo)
-				}
-				&:after{
-					content:">";
-					margin:0 5px;
+					i{
+						margin:0 5px;
+					}
 				}
 				&:last-child{
 					&:after{

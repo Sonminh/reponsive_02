@@ -58,8 +58,8 @@
 		div.button-menu-header{
 			display:inline-block;
 			position:absolute;
-			top:5%;
-			right:5%;
+			top:50px;
+			right:30px;
 			div.container{
 				width:100% !important;
 				a{
@@ -588,7 +588,6 @@
 			div.main-consulting{
 				margin:0 !important;
 				div.list-consulting{
-					@include setPaddingAndBackground();
 					margin-top:40px;
 					ul{
 						padding:0 30px;

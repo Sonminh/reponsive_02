@@ -14,8 +14,8 @@
 		div.button-menu-header{
 			display:inline-block;
 			position:absolute;
-			top:4.5%;
-			right:5%;
+			top:40px;
+			right:20px;
 			div.container{
 				width:100% !important;
 				a{
@@ -52,7 +52,7 @@
 						padding:22px 0;
 						position:relative;
 						div.number{
-							@include setFont(1.5rem,#ffffff,500,$font-meiryo);
+							@include setFont(1.25rem,#ffffff,500,$font-meiryo);
 							img{
 								padding:0;
 								width:40px;
@@ -216,7 +216,7 @@
 			}
 			div.l-content-index{
 			padding:0;
-			&:nth-child(2n){
+			&:nth-child(2n+1){
 				background: rgba(0,0,0,0);
 			}
 			div.container{
@@ -530,7 +530,6 @@
 			div.main-consulting{
 				margin:0 !important;
 				div.list-consulting{
-					@include setPaddingAndBackground();
 					margin-top:40px;
 					ul{
 						padding:0 30px;
@@ -599,6 +598,9 @@
 									}
 								}
 							}
+							&:last-child{
+								border-bottom:none;
+							}
 						}
 					}
 					div.article-right{
@@ -608,6 +610,9 @@
 				}
 				div.article-02{
 					@include border-box;
+					&:first-child{
+						border-bottom:1px solid #dddddd;
+					}
 					div.article-02-left{
 						float:none;
 						width:100%;

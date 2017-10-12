@@ -414,8 +414,7 @@ div.c-breadcum div.container ul.breadcum li a {
   font-family: "Meiryo", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
-div.c-breadcum div.container ul.breadcum li:after {
-  content: ">";
+div.c-breadcum div.container ul.breadcum li a i {
   margin: 0 5px;
 }
 
@@ -1402,7 +1401,7 @@ footer.l-footer div.footer-bottom div.container:after {
 footer.l-footer div.c-back-to-top {
   position: fixed;
   bottom: 3%;
-  right: 20%;
+  right: 10%;
 }
 
 footer.l-footer div.c-back-to-top a {
@@ -2260,8 +2259,8 @@ footer.l-footer div.c-back-to-top a i {
   header.l-header div.button-menu-header {
     display: inline-block;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 50px;
+    right: 30px;
   }
   header.l-header div.button-menu-header div.container {
     width: 100% !important;
@@ -2894,8 +2893,6 @@ footer.l-footer div.c-back-to-top a i {
     margin: 0 !important;
   }
   div.l-content-consulting div.container div.main-consulting div.list-consulting {
-    padding: 0 15px !important;
-    background: transparent;
     margin-top: 40px;
   }
   div.l-content-consulting div.container div.main-consulting div.list-consulting ul {
@@ -3239,8 +3236,8 @@ footer.l-footer div.c-back-to-top a i {
   header.l-header div.button-menu-header {
     display: inline-block;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 50px;
+    right: 30px;
   }
   header.l-header div.button-menu-header div.container {
     width: 100% !important;
@@ -3260,8 +3257,8 @@ footer.l-footer div.c-back-to-top a i {
   header.l-header div.button-menu-header {
     display: inline-block;
     position: absolute;
-    top: 4.5%;
-    right: 5%;
+    top: 40px;
+    right: 20px;
   }
   header.l-header div.button-menu-header div.container {
     width: 100% !important;
@@ -3306,7 +3303,7 @@ footer.l-footer div.c-back-to-top a i {
   }
   footer.l-footer div.info-footer div.container div.contact div.number {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: "Meiryo", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", sans-serif;
   }
@@ -3538,7 +3535,7 @@ footer.l-footer div.c-back-to-top a i {
   div.l-content-index {
     padding: 0;
   }
-  div.l-content-index:nth-child(2n) {
+  div.l-content-index:nth-child(2n+1) {
     background: transparent;
   }
   div.l-content-index div.container {
@@ -3908,8 +3905,6 @@ footer.l-footer div.c-back-to-top a i {
     margin: 0 !important;
   }
   div.l-content-consulting div.container div.main-consulting div.list-consulting {
-    padding: 0 15px !important;
-    background: transparent;
     margin-top: 40px;
   }
   div.l-content-consulting div.container div.main-consulting div.list-consulting ul {
@@ -3990,6 +3985,9 @@ footer.l-footer div.c-back-to-top a i {
     font-size: 1.25rem;
     margin-top: 5px;
   }
+  div.l-content-consulting div.container div.main-consulting div.article-01 div.article-left div.box-article-1:last-child {
+    border-bottom: none;
+  }
   div.l-content-consulting div.container div.main-consulting div.article-01 div.article-right {
     display: none;
   }
@@ -4004,6 +4002,9 @@ footer.l-footer div.c-back-to-top a i {
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
+  }
+  div.l-content-consulting div.container div.main-consulting div.article-02:first-child {
+    border-bottom: 1px solid #dddddd;
   }
   div.l-content-consulting div.container div.main-consulting div.article-02 div.article-02-left {
     float: none;
